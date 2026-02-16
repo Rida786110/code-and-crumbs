@@ -1,0 +1,86 @@
+/*
+Theme Name: Xperio
+Theme URI: 
+Author: CozyThemes
+Author URI: https://cozythemes.com/
+Description: Xperio is a modern Full Site Editing (FSE) WordPress theme crafted for web developers, designers, and digital creators who want to showcase their work with clarity and impact. Built entirely with Gutenberg blocks, Xperio offers complete control over layouts, templates, and global styles—without writing a single line of code.The theme features a minimal, performance-focused design that highlights projects, skills, and experience while maintaining a professional aesthetic. With customizable patterns, responsive layouts, and seamless block-based editing, Xperio makes it easy to create stunning portfolio websites, personal brands, and developer showcases.Fully compatible with WordPress’s latest FSE capabilities, Xperio ensures flexibility, scalability, and future-proof design—perfect for developers who value both form and function.
+Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, e-commerce, full-site-editing, block-patterns, full-width-template, rtl-language-support, threaded-comments, translation-ready, block-styles, wide-blocks
+Version: 1.0.1
+Requires at least: 5.9
+Tested up to: 6.8
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: xperio
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.entry-content.wp-block-post-content a,
+.wp-block-comment-content a,
+p a {
+  text-decoration: underline;
+}
+/* WooCommerce Product Archive */
+.xperio-product-image-overlay {
+  & span.wp-block-cover__background {
+    visibility: hidden;
+  }
+  & div.wp-block-cover__inner-container {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+.xperio-product-image-overlay:hover {
+  & span.wp-block-cover__background {
+    visibility: visible;
+  }
+  & div.wp-block-cover__inner-container {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.3s ease-in-out;
+  }
+}
+/* ***** NEWSLETTER ***** */
+.xperio-newsletter-form {
+  margin: 0;
+  & .wpcf7-form {
+    width: 100%;
+  }
+  & p {
+    display: flex;
+    border-bottom: 1px solid var(--wp--preset--color--border-color);
+    padding-bottom: 12px;
+    & .wpcf7-form-control-wrap {
+      max-width: 100%;
+    }
+    & .wpcf7-email {
+      height: 100%;
+      width: 100%;
+      font-size: 18px;
+      background-color: transparent;
+      border: none;
+      outline: none;
+      color: var(--wp--preset--color--meta-color);
+    }
+    & .wpcf7-submit {
+      border: none;
+      font-size: 18px;
+      padding: 12px 15px;
+      border-radius: 100%;
+      font-weight: 600;
+      opacity: 1;
+      background-color: #f8fc26;
+      transition: all 0.2s ease-in-out;
+    }
+    & .wpcf7-submit:hover {
+      opacity: 0.8;
+      transition: all 0.2s ease-in-out;
+    }
+    & .wpcf7-spinner {
+      width: 0px;
+      margin: 0;
+      right: 0;
+    }
+  }
+}

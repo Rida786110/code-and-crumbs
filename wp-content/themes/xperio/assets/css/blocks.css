@@ -1,0 +1,141 @@
+.wp-site-blocks > * + * {
+  margin-block-start: 0 !important;
+}
+
+
+/* ***** NAVIGATION ***** */
+/* Primary */
+.is-style-xperio-navigation-primary a:hover {
+  color: var(--wp--preset--color--primary) !important;
+}
+/* Secondary */
+.is-style-xperio-navigation-secondary a:hover {
+  color: var(--wp--preset--color--secondary) !important;
+}
+/* ******* BUTTON ******* */
+.is-style-xperio-button-arrow > .wp-block-button__link {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  transition: 0.5s;
+}
+.is-style-xperio-button-arrow .wp-block-button__link::after {
+  content: "";
+  background-color: currentColor;
+  -webkit-mask-image: url(../images/arrow.svg);
+  mask-image: url(../images/arrow.svg);
+  mask-repeat: no-repeat;
+  mask-position: center center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center center;
+  opacity: 1;
+  font-size: larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 20px;
+  transform: rotate(315deg);
+  transition: all 0.2s ease-in-out;
+}
+.is-style-xperio-button-arrow:hover .wp-block-button__link::after {
+  transition: all 0.2s ease-in-out;
+  transform: translateX(5px) rotate(315deg);
+}
+/* ***** IMAGE ***** */
+figure.is-style-xperio-hover-zoom-in,
+figure.is-style-xperio-hover-zoom-out {
+  overflow: hidden;
+}
+figure.is-style-xperio-hover-zoom-in:hover img {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+figure.is-style-xperio-hover-zoom-in img {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+figure.is-style-xperio-hover-zoom-out:hover img {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+figure.is-style-xperio-hover-zoom-out img {
+  transform: scale(1.05);
+  transition: all 0.2s ease-in-out;
+}
+/* ****** GROUP / COLUMN ****** */
+.is-style-xperio-boxshadow {
+  box-shadow: 0 4px 20px 0 rgb(26, 25, 29, 5%);
+}
+.is-style-xperio-boxshadow-hover:hover {
+  box-shadow: 0 4px 20px 0 rgb(26, 25, 29, 5%);
+  transition: all 0.2s ease-in-out;
+}
+.is-style-xperio-boxshadow-hover {
+  box-shadow: 0 4px 20px 0 rgb(26, 25, 29, 0%);
+  transition: all 0.2s ease-in-out;
+}
+.is-style-xperio-overflow-hidden {
+  overflow: hidden;
+}
+/* ******* SOCIAL ICONS ******* */
+.is-style-xperio-no-radius .wp-social-link {
+  border-radius: 0;
+}
+/* ***** PAGINATION ***** */
+/* Primary */
+.is-style-xperio-pagination-primary.wp-block-query-pagination .page-numbers {
+  border: 1px solid var(--wp--preset--color--border-color);
+  padding: 8px 16px;
+  line-height: 1;
+}
+.is-style-xperio-pagination-primary.wp-block-query-pagination
+  .page-numbers.current {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black-color);
+  border-color: var(--wp--preset--color--primary);
+}
+.is-style-xperio-pagination-primary.wp-block-query-pagination
+  .page-numbers:hover,
+.is-style-xperio-pagination-primary .wp-block-query-pagination-previous:hover,
+.is-style-xperio-pagination-primary .wp-block-query-pagination-next:hover {
+  background-color: var(--wp--preset--color--primary);
+  color: var(--wp--preset--color--black-color);
+  border-color: var(--wp--preset--color--primary);
+}
+.is-style-xperio-pagination-primary .wp-block-query-pagination-previous,
+.is-style-xperio-pagination-primary .wp-block-query-pagination-next {
+  padding: 8px 16px;
+  border: 1px solid var(--wp--preset--color--border-color);
+}
+/* Secondary */
+.is-style-xperio-pagination-secondary.wp-block-query-pagination .page-numbers {
+  border: 1px solid var(--wp--preset--color--border-color);
+  padding: 8px 16px;
+  line-height: 1;
+}
+.is-style-xperio-pagination-secondary.wp-block-query-pagination
+  .page-numbers.current {
+  background-color: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--light-color);
+  border-color: var(--wp--preset--color--secondary);
+}
+.is-style-xperio-pagination-secondary.wp-block-query-pagination
+  .page-numbers:hover,
+.is-style-xperio-pagination-secondary .wp-block-query-pagination-previous:hover,
+.is-style-xperio-pagination-secondary .wp-block-query-pagination-next:hover {
+  background-color: var(--wp--preset--color--secondary);
+  color: var(--wp--preset--color--light-color);
+  border-color: var(--wp--preset--color--secondary);
+}
+.is-style-xperio-pagination-secondary .wp-block-query-pagination-previous,
+.is-style-xperio-pagination-secondary .wp-block-query-pagination-next {
+  padding: 8px 16px;
+  border: 1px solid var(--wp--preset--color--border-color);
+}
+/* ***** CATEGORIES ***** */
+.is-style-xperio-categories-no-list li.cat-item {
+  list-style: none;
+}

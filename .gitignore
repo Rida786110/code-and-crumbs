@@ -16,7 +16,6 @@
 /readme.html
 /wp-*.php
 /xmlrpc.php
-
 # Configuration
 wp-config.php
 
@@ -46,3 +45,8 @@ wp-config.php
 # Note: If you wish to whitelist themes,
 # uncomment the next line
 #/wp-content/themes
+#extra files
+/wp-content/cache
+/wp-content/upgrade-temp-back upgrade
+/wp-content/upgrade
+/wp-content/wflogs
